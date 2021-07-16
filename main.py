@@ -24,7 +24,9 @@ def main():
         r = requests.get('https://cataas.com/cat')
         with open(location, 'wb') as f:
             f.write(r.content)
+   print(path)
 
     print(r.headers.get('content-type'))
 
-main()
+if __name__ == '__main__':
+    main()
